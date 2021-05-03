@@ -20,6 +20,7 @@ public class PruebaGithub {
         
         
         HolaJack holaJack = new HolaJack();
+        holaJack.setVisible(true);
         
     }
     
