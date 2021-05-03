@@ -200,8 +200,8 @@ public class Hospital {
 
         try {
             String temp = "";
-            FileWriter archivoMedicos = new FileWriter(raiz + "\\PACIENTES.txt");
-            FileWriter archivoPacientes = new FileWriter(raiz + "\\MEDICOS.txt");
+            FileWriter archivoMedicos = new FileWriter(raiz + "\\MEDICOS.txt");
+            FileWriter archivoPacientes = new FileWriter(raiz + "\\Pacientes.txt");
             FileWriter archivoAdmins = new FileWriter(raiz + "\\ADMINISTRATIVOS.txt");
             FileWriter archivoHabs = new FileWriter(raiz + "\\HABITACIONES.txt");
 
