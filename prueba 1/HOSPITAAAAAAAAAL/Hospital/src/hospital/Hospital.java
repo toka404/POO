@@ -130,7 +130,7 @@ public class Hospital {
             }
 
             for (Habitacion hab : habitaciones) {
-                hab.imprimirInfo();
+                hab.obtenerInformacion();
             }
             myReader.close();
         } catch (FileNotFoundException e) {
@@ -204,7 +204,7 @@ public class Hospital {
             FileWriter archivoPacientes = new FileWriter(raiz + "\\MEDICOS.txt");
             FileWriter archivoAdmins = new FileWriter(raiz + "\\ADMINISTRATIVOS.txt");
             FileWriter archivoHabs = new FileWriter(raiz + "\\HABITACIONES.txt");
-//
+
             // GUARDAR MEDICOS
             for (Medico med : medicos) {
                 temp += med.obtenerInformacion() + "\n";
@@ -214,13 +214,31 @@ public class Hospital {
             archivoMedicos.close();
 
             temp = "";
-            // GUARDAR MEDICOS
-            for (Paciente med : pacientes) {
-                temp += med.obtenerInformacion() + "\n";
+            // GUARDAR PACIENTES
+            for (Paciente pac : pacientes) {
+                temp += pac.obtenerInformacion() + "\n";
             }
             archivoPacientes.write(temp);
             archivoPacientes.flush();
             archivoPacientes.close();
+
+            temp = "";           
+            // GUARDAR ADMINISTRATIVOS
+            for (Administrativo admin : admins) {
+                temp += admin.obtenerInformacion() + "\n";
+            }
+            archivoAdmins.write(temp);
+            archivoAdmins.flush();
+            archivoAdmins.close();
+        
+            temp = "";  
+            // GUARDAR HABITACIONES
+            for (Habitacion hab : habitaciones) {
+                temp += hab.obtenerInformacion() + "\n";
+            }
+            archivoHabs.write(temp);
+            archivoHabs.flush();
+            archivoHabs.close();
 
         } catch (IOException ex) {
             Logger.getLogger(Hospital.class.getName()).log(Level.SEVERE, null, ex);

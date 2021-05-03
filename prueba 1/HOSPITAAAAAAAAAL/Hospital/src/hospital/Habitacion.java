@@ -65,7 +65,7 @@ public class Habitacion {
         return new String[]{codigo, disp, String.valueOf(piso), tipo};
     }
 
-    public String imprimirInfo() {
+    public String obtenerInformacion() {
         return "Código" + codigo + ";Piso:" + piso + ";Tipo:" + tipo;
     }
 }
