@@ -18,9 +18,15 @@ public class PruebaGithub {
      */
     public static void main(String[] args) {
         
+
         
         HolaJack holaJack = new HolaJack();
         holaJack.setVisible(true);
+
+        System.out.println("Hola Bryan");
+        HolaBryan h = new HolaBryan();
+        h.setVisible(true);
+
         
     }
     
