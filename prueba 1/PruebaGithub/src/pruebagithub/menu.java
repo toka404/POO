@@ -111,7 +111,6 @@ public class menu extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // crea el flujo para leer desde el archivo
         String raiz = System.getProperty("user.dir");
-        System.out.println(raiz);
         File file = new File(raiz + "\\saludo.txt");
         ArrayList listaEstudiantes = new ArrayList<>();
         Scanner scanner;

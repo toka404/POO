@@ -1,5 +1,5 @@
-ID:p01;Paciente:135;Edad:23;Género:M;Habitación:h002;Médico:Dra. Polo
-ID:p02;Paciente:136;Edad:24;Género:M;Habitación:h003;Médico:Dr. Strange
-ID:p03;Paciente:137;Edad:25;Género:M;Habitación:h004;Médico:Dr. Strange
-ID:p04;Paciente:138;Edad:26;Género:M;Habitación:h005;Médico:Dr. Ácula
-ID:p05;Paciente:139;Edad:27;Género:M;Habitación:h006;Médico:Dra. Polo
+ID:p01;Paciente:135;Edad:23;Género:M;Habitación:h002;Médico:m01;FechaIngreso:2016-03-04T11:30
+ID:p02;Paciente:136;Edad:24;Género:M;Habitación:h003;Médico:m02;FechaIngreso:2016-03-04T11:30
+ID:p03;Paciente:137;Edad:25;Género:M;Habitación:h004;Médico:m01;FechaIngreso:2016-03-04T11:30
+ID:p04;Paciente:138;Edad:26;Género:M;Habitación:h005;Médico:m02;FechaIngreso:2016-03-04T11:30
+ID:p05;Paciente:139;Edad:27;Género:M;Habitación:h006;Médico:m01;FechaIngreso:2016-03-04T11:30

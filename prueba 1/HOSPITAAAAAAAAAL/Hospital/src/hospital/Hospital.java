@@ -25,23 +25,25 @@ public class Hospital {
 
     private static ArrayList<Paciente> pacientes;
     private static ArrayList<Medico> medicos;
-    private static ArrayList<Administrativo> admins; 
-    private static ArrayList<Habitacion> habitaciones; 
+    private static ArrayList<Administrativo> admins;
+    private static ArrayList<Habitacion> habitaciones;
 
     /**
      * @param args the command line arguments
      */
-    
-    public ArrayList<Paciente> cargarClientes(){
-        
+    public ArrayList<Paciente> cargarClientes() {
+
         return null;
     }
+
     public static void main(String[] args) {
 
-        File archivoPacientes = new File("C:\\Users\\ASUS\\Downloads\\PACIENTES.txt");
-        File archivoMedicos = new File("C:\\Users\\ASUS\\Downloads\\MEDICOS.txt");
-        File archivoAdmins = new File("C:\\Users\\ASUS\\Downloads\\ADMINISTRATIVOS.txt");
-        File archivoHabitaciones = new File("C:\\Users\\ASUS\\Downloads\\HABITACIONES.txt");
+        String raiz = System.getProperty("user.dir");
+
+        File archivoPacientes = new File(raiz + "\\PACIENTES.txt");
+        File archivoMedicos = new File(raiz + "\\MEDICOS.txt");
+        File archivoAdmins = new File(raiz + "\\ADMINISTRATIVOS.txt");
+        File archivoHabitaciones = new File(raiz + "\\HABITACIONES.txt");
 
         String[] espacios;
         String[] pcomas;
@@ -194,22 +196,24 @@ public class Hospital {
 
     //Función para guardar en archivos
     public static void guardarEnArchivos() {
+        String raiz = System.getProperty("user.dir");
+
         try {
             String temp = "";
-            FileWriter archivoMedicos = new FileWriter("C:\\Users\\ASUS\\Downloads\\MEDICOS.txt");
-            FileWriter archivoPacientes = new FileWriter("C:\\Users\\ASUS\\Downloads\\PACIENTES.txt");
-            FileWriter archivoAdmins = new FileWriter("C:\\Users\\ASUS\\Downloads\\ADMINISTRATIVOS.txt");
-            FileWriter archivoHabs = new FileWriter("C:\\Users\\ASUS\\Downloads\\HABITACIONES.txt");
+            FileWriter archivoMedicos = new FileWriter(raiz + "\\PACIENTES.txt");
+            FileWriter archivoPacientes = new FileWriter(raiz + "\\MEDICOS.txt");
+            FileWriter archivoAdmins = new FileWriter(raiz + "\\ADMINISTRATIVOS.txt");
+            FileWriter archivoHabs = new FileWriter(raiz + "\\HABITACIONES.txt");
+
 
             // GUARDAR MEDICOS
-            for (Paciente pac : pacientes){
+            for (Paciente pac : pacientes) {
                 temp += pac.obtenerInformacion() + "\n";
             }
             archivoMedicos.write(temp);
             archivoMedicos.flush();
             archivoMedicos.close();
-            
-            
+
         } catch (IOException ex) {
             Logger.getLogger(Hospital.class.getName()).log(Level.SEVERE, null, ex);
         }
