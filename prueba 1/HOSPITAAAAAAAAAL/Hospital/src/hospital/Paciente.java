@@ -88,7 +88,7 @@ public class Paciente extends Persona {
 
     public String obtenerInformacion() {
         return "ID:" + id + ";Nombre:" + nombre + ";Edad:" + edad
-                + ";Género:" + genero + ";Especialidad:" + ";FechaIngreso:" + String.valueOf(fechaIngreso);
+                + ";Género:" + genero + ";Habitación:" + habitacion.obtenerCodigo()+ ";Médico:"+medico.obtenerId()+ ";FechaIngreso:" + String.valueOf(fechaIngreso);
     }
 
 }

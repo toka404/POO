@@ -66,6 +66,6 @@ public class Habitacion {
     }
 
     public String obtenerInformacion() {
-        return "Código" + codigo + ";Piso:" + piso + ";Tipo:" + tipo;
+        return "Código:" + codigo + ";Piso:" + piso + ";Tipo:" + tipo+ "Paciente:"+paciente;
     }
 }

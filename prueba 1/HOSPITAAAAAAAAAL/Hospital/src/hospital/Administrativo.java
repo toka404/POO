@@ -28,6 +28,6 @@ public class Administrativo extends Persona {
 
     public String obtenerInformacion() {
         return "ID:" + id + ";Nombre:" + nombre + ";Edad:" + edad
-                + ";Género:" + genero + ";Especialidad:" + ";Contraseña:" + contrasena;
+                + ";Género:" + genero + ";Contraseña:" + contrasena;
     }
 }

@@ -1,6 +1,6 @@
-Codigo:h001;Piso:1;Tipo:General;Paciente:null
-Codigo:h002;Piso:2;Tipo:VIP;Paciente:null
-Codigo:h003;Piso:3;Tipo:General;Paciente:null
-Codigo:h004;Piso:5;Tipo:VIP;x:55;Paciente:null
-Codigo:h005;Piso:5;Tipo:VIP;Paciente:null
-Codigo:h006;Piso:6;Tipo:VIP;Paciente:null
+Código:h001;Piso:1;Tipo:GeneralPacientePaciente:null
+Código:h002;Piso:2;Tipo:VIPPacientePaciente:null
+Código:h003;Piso:3;Tipo:GeneralPacientePaciente:null
+Código:h004;Piso:5;Tipo:VIPPacientePaciente:null
+Código:h005;Piso:5;Tipo:VIPPacientePaciente:null
+Código:h006;Piso:6;Tipo:VIPPacientePaciente:null
