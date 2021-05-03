@@ -64,6 +64,9 @@ public class InterfaceAdministrativo extends javax.swing.JFrame {
         this.habitaciones = habitaciones;
         pacientestxt = new File("C:\\Users\\alang\\Documents\\NetBeansProjects\\PROYECTO HOSPITAL\\Hospital\\Pacientes.txt");
 
+        for(Medico med : medicos){
+            jComboBox4.addItem(med.obtenerNombre());
+        }
     }
 
     /**
@@ -227,7 +230,6 @@ public class InterfaceAdministrativo extends javax.swing.JFrame {
         txtHab.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         jComboBox4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dra. Polo", "Dr. House", "Dr. Strange", "Dr. Ácula" }));
         jComboBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox4ActionPerformed(evt);
