@@ -63,7 +63,6 @@ public class InterfaceAdministrativo extends javax.swing.JFrame {
         this.pacientes = pacientes;
         this.habitaciones = habitaciones;
         pacientestxt = new File("C:\\Users\\alang\\Documents\\NetBeansProjects\\PROYECTO HOSPITAL\\Hospital\\Pacientes.txt");
-
     }
 
     /**

@@ -310,7 +310,7 @@ public class InterfaceMedico extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private String[] obtenerDatos() {
+   /* private String[] obtenerDatos() {
 
         try (BufferedReader br = Files.newBufferedReader(Paths.get("C:\\Users\\alang\\Documents\\NetBeansProjects\\PROYECTO HOSPITAL\\Hospital\\Pacientes.txt"))) {
 
@@ -330,7 +330,7 @@ public class InterfaceMedico extends javax.swing.JFrame {
             System.err.format("IOException: %s%n", e);
         }
         return null;
-    }
+    }*/
 
     private void JIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JIDActionPerformed
         // TODO add your handling code here:
