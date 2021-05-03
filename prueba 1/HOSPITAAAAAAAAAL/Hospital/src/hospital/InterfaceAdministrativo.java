@@ -939,7 +939,7 @@ public class InterfaceAdministrativo extends javax.swing.JFrame {
 
         for (Paciente paciente : pacientes) {
             String[] elementos = paciente.obtenerDatosPaciente();
-            model.insertRow(model.getRowCount(), new Object[]{elementos[0], elementos[1], elementos[2], elementos[3], elementos[4]});
+            model.insertRow(model.getRowCount(), new Object[]{elementos[0], elementos[1], elementos[2], elementos[3], elementos[4], paciente.obtenerMedico().obtenerNombre()});
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
