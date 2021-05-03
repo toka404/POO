@@ -205,14 +205,22 @@ public class Hospital {
             FileWriter archivoAdmins = new FileWriter(raiz + "\\ADMINISTRATIVOS.txt");
             FileWriter archivoHabs = new FileWriter(raiz + "\\HABITACIONES.txt");
 
-
             // GUARDAR MEDICOS
-            for (Paciente pac : pacientes) {
-                temp += pac.obtenerInformacion() + "\n";
+            for (Medico med : medicos) {
+                temp += med.obtenerInformacion() + "\n";
             }
             archivoMedicos.write(temp);
             archivoMedicos.flush();
             archivoMedicos.close();
+
+            temp = "";
+            // GUARDAR MEDICOS
+            for (Paciente med : pacientes) {
+                temp += med.obtenerInformacion() + "\n";
+            }
+            archivoPacientes.write(temp);
+            archivoPacientes.flush();
+            archivoPacientes.close();
 
         } catch (IOException ex) {
             Logger.getLogger(Hospital.class.getName()).log(Level.SEVERE, null, ex);
