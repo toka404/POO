@@ -204,7 +204,7 @@ public class Hospital {
             FileWriter archivoPacientes = new FileWriter(raiz + "\\MEDICOS.txt");
             FileWriter archivoAdmins = new FileWriter(raiz + "\\ADMINISTRATIVOS.txt");
             FileWriter archivoHabs = new FileWriter(raiz + "\\HABITACIONES.txt");
-
+//
             // GUARDAR MEDICOS
             for (Medico med : medicos) {
                 temp += med.obtenerInformacion() + "\n";
