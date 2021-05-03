@@ -192,6 +192,7 @@ public class Hospital {
 
     }
 
+    //Función para guardar en archivos
     public static void guardarEnArchivos() {
         try {
             String temp = "";
