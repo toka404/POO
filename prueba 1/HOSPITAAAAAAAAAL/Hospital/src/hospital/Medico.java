@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author alang
  */
-public class Medico extends Persona {
+    public class Medico extends Persona {
     private String especialidad;
     private ArrayList<Paciente> pacientes;
     private String contrasena;
