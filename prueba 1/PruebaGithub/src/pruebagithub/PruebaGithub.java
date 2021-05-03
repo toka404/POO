@@ -19,7 +19,9 @@ public class PruebaGithub {
     public static void main(String[] args) {
         
 
-      
+        System.out.println("el jared estuvo aquí");
+        // comentario 1
+        // comentario 2
         
         menu m1 = new menu();
         m1.setVisible(true);
